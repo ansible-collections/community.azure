@@ -12,5 +12,5 @@ tags: null
 #  azure.azcollection: '>=0.1.0'
 repository: https://github.com:ansible-collections/community.azure
 documentation: https://github.com/ansible-collection-migration/community.azure/tree/master/docs
-homepage: https://github.com:ansible-collections/community..azure
-issues: https://github.com:ansible-collections/community..azure/issues
+homepage: https://github.com/ansible-collections/community.azure
+issues: https://github.com/ansible-collections/community.azure/issues
