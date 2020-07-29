@@ -51,7 +51,7 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of DTL Virtual Machine
-    azure_rm_devtestlabvirtualmachine_info:
+    community.azure.azure_rm_devtestlabvirtualmachine_info:
       resource_group: myResourceGroup
       lab_name: myLab
       name: myVm

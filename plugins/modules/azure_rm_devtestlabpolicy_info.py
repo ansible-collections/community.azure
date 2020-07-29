@@ -56,7 +56,7 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of Policy
-    azure_rm_devtestlabpolicy_info:
+    community.azure.azure_rm_devtestlabpolicy_info:
       resource_group: myResourceGroup
       lab_name: myLab
       policy_set_name: myPolicySet

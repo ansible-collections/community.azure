@@ -51,15 +51,15 @@ author:
 
 EXAMPLES = r'''
 - name: Get facts for one managed disk
-  azure_rm_manageddisk_info:
+  community.azure.azure_rm_manageddisk_info:
     name: Testing
     resource_group: myResourceGroup
 
 - name: Get facts for all managed disks
-  azure_rm_manageddisk_info:
+  community.azure.azure_rm_manageddisk_info:
 
 - name: Get facts by tags
-  azure_rm_manageddisk_info:
+  community.azure.azure_rm_manageddisk_info:
     tags:
     - testing
 '''

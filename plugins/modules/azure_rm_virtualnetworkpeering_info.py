@@ -41,7 +41,7 @@ author:
 
 EXAMPLES = '''
     - name: Get virtual network peering by name
-      azure_rm_virtualnetworkpeering_info:
+      community.azure.azure_rm_virtualnetworkpeering_info:
         resource_group: myResourceGroup
         virtual_network: myVnet1
         name: myVnetPeer

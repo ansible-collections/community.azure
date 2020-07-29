@@ -51,7 +51,7 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of DevTest Lab Artifact Source
-    azure_rm_devtestlabartifactsource_info:
+    community.azure.azure_rm_devtestlabartifactsource_info:
       resource_group: myResourceGroup
       lab_name: myLab
       name: myArtifactSource

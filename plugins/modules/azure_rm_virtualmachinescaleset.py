@@ -263,7 +263,7 @@ author:
 EXAMPLES = '''
 
 - name: Create VMSS
-  azure_rm_virtualmachinescaleset:
+  community.azure.azure_rm_virtualmachinescaleset:
     resource_group: myResourceGroup
     name: testvmss
     vm_size: Standard_DS1_v2
@@ -291,7 +291,7 @@ EXAMPLES = '''
         managed_disk_type: Standard_LRS
 
 - name: Create VMSS with an image that requires plan information
-  azure_rm_virtualmachinescaleset:
+  community.azure.azure_rm_virtualmachinescaleset:
     resource_group: myResourceGroup
     name: testvmss
     vm_size: Standard_DS1_v2
@@ -321,7 +321,7 @@ EXAMPLES = '''
         managed_disk_type: Standard_LRS
 
 - name: Create a VMSS with a custom image
-  azure_rm_virtualmachinescaleset:
+  community.azure.azure_rm_virtualmachinescaleset:
     resource_group: myResourceGroup
     name: testvmss
     vm_size: Standard_DS1_v2
@@ -335,7 +335,7 @@ EXAMPLES = '''
     image: customimage001
 
 - name: Create a VMSS with a custom image and override data disk
-  azure_rm_virtualmachinescaleset:
+  community.azure.azure_rm_virtualmachinescaleset:
     resource_group: myResourceGroup
     name: testvmss
     vm_size: Standard_DS1_v2
@@ -355,7 +355,7 @@ EXAMPLES = '''
         create_option: FromImage
 
 - name: Create a VMSS with over 100 instances
-  azure_rm_virtualmachinescaleset:
+  community.azure.azure_rm_virtualmachinescaleset:
     resource_group: myResourceGroup
     name: testvmss
     vm_size: Standard_DS1_v2
@@ -370,7 +370,7 @@ EXAMPLES = '''
     image: customimage001
 
 - name: Create a VMSS with a custom image from a particular resource group
-  azure_rm_virtualmachinescaleset:
+  community.azure.azure_rm_virtualmachinescaleset:
     resource_group: myResourceGroup
     name: testvmss
     vm_size: Standard_DS1_v2

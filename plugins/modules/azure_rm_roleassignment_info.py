@@ -50,11 +50,11 @@ author:
 
 EXAMPLES = '''
     - name: Get role assignments for specific service principal
-      azure_rm_roleassignment_info:
+      community.azure.azure_rm_roleassignment_info:
         assignee: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
     - name: Get role assignments for specific scope
-      azure_rm_roleassignment_info:
+      community.azure.azure_rm_roleassignment_info:
         scope: /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 '''
 

@@ -45,16 +45,16 @@ author:
 
 EXAMPLES = '''
 - name: Get facts for one zone
-  azure_rm_dnszone_info:
+  community.azure.azure_rm_dnszone_info:
     resource_group: myResourceGroup
     name: foobar22
 
 - name: Get facts for all zones in a resource group
-  azure_rm_dnszone_info:
+  community.azure.azure_rm_dnszone_info:
     resource_group: myResourceGroup
 
 - name: Get facts by tags
-  azure_rm_dnszone_info:
+  community.azure.azure_rm_dnszone_info:
     tags:
       - testing
 '''

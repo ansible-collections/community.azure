@@ -77,7 +77,7 @@ author:
 
 EXAMPLES = '''
     - name: Create VM Extension
-      azure_rm_virtualmachineextension:
+      community.azure.azure_rm_virtualmachineextension:
         name: myvmextension
         location: eastus
         resource_group: myResourceGroup
@@ -89,7 +89,7 @@ EXAMPLES = '''
         auto_upgrade_minor_version: true
 
     - name: Delete VM Extension
-      azure_rm_virtualmachineextension:
+      community.azure.azure_rm_virtualmachineextension:
         name: myvmextension
         location: eastus
         resource_group: myResourceGroup

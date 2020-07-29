@@ -44,13 +44,13 @@ author:
 
 EXAMPLES = '''
   - name: Get facts of specific subnet
-    azure_rm_subnet_info:
+    community.azure.azure_rm_subnet_info:
       resource_group: myResourceGroup
       virtual_network_name: myVirtualNetwork
       name: mySubnet
 
   - name: List facts for all subnets in virtual network
-    azure_rm_subnet_info:
+    community.azure.azure_rm_subnet_info:
       resource_group: myResourceGroup
       virtual_network_name: myVirtualNetwork
       name: mySubnet

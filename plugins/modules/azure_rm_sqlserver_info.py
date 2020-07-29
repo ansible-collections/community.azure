@@ -41,12 +41,12 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of SQL Server
-    azure_rm_sqlserver_info:
+    community.azure.azure_rm_sqlserver_info:
       resource_group: myResourceGroup
       server_name: server_name
 
   - name: List instances of SQL Server
-    azure_rm_sqlserver_info:
+    community.azure.azure_rm_sqlserver_info:
       resource_group: myResourceGroup
 '''
 

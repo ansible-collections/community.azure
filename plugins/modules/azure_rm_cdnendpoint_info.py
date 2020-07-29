@@ -49,12 +49,12 @@ author:
 
 EXAMPLES = '''
   - name: Get facts for all endpoints in CDN profile
-    azure_rm_cdnendpoint_info:
+    community.azure.azure_rm_cdnendpoint_info:
       resource_group: myResourceGroup
       profile_name: myCDNProfile
 
   - name: Get facts of specific CDN endpoint
-    azure_rm_cdnendpoint_info:
+    community.azure.azure_rm_cdnendpoint_info:
       resource_group: myResourceGroup
       profile_name: myCDNProfile
       name: myEndpoint1

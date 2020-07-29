@@ -51,7 +51,7 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of Schedule
-    azure_rm_devtestlabschedule_info:
+    community.azure.azure_rm_devtestlabschedule_info:
       resource_group: myResourceGroup
       lab_name: myLab
       name: mySchedule

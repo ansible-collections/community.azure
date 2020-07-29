@@ -49,13 +49,13 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of MariaDB Database
-    azure_rm_mariadbdatabase_info:
+    community.azure.azure_rm_mariadbdatabase_info:
       resource_group: myResourceGroup
       server_name: server_name
       name: database_name
 
   - name: List instances of MariaDB Database
-    azure_rm_mariadbdatabase_info:
+    community.azure.azure_rm_mariadbdatabase_info:
       resource_group: myResourceGroup
       server_name: server_name
 '''

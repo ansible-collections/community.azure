@@ -42,12 +42,12 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of HDInsight Cluster
-    azure_rm_hdinsightcluster_info:
+    community.azure.azure_rm_hdinsightcluster_info:
       resource_group: myResourceGroup
       name: myCluster
 
   - name: List instances of HDInsight Cluster
-    azure_rm_hdinsightcluster_info:
+    community.azure.azure_rm_hdinsightcluster_info:
       resource_group: myResourceGroup
 '''
 

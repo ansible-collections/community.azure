@@ -57,7 +57,7 @@ author:
 
 EXAMPLES = '''
 - name: Query a workspace
-  azure_rm_loganalyticsworkspace_info:
+  community.azure.azure_rm_loganalyticsworkspace_info:
       resource_group: myResourceGroup
       name: myLogAnalyticsWorkspace
       show_intelligence_packs: true

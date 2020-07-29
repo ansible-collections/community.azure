@@ -44,14 +44,14 @@ author:
 
 EXAMPLES = '''
   - name: List instances of DevTest Lab by resource group
-    azure_rm_devtestlab_info:
+    community.azure.azure_rm_devtestlab_info:
       resource_group: testrg
 
   - name: List instances of DevTest Lab in subscription
-    azure_rm_devtestlab_info:
+    community.azure.azure_rm_devtestlab_info:
 
   - name: Get instance of DevTest Lab
-    azure_rm_devtestlab_info:
+    community.azure.azure_rm_devtestlab_info:
       resource_group: testrg
       name: testlab
 '''
