@@ -85,7 +85,7 @@ azure_virtualnetworks:
     }]
 virtualnetworks:
     description:
-        - List of virtual network dicts with same format as M(azure_rm_virtualnetwork) module parameters.
+        - List of virtual network dicts with same format as M(community.azure.azure_rm_virtualnetwork) module parameters.
     returned: always
     type: complex
     contains:
