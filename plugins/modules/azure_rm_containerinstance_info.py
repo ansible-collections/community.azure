@@ -43,12 +43,12 @@ author:
 
 EXAMPLES = '''
   - name: Get specific Container Instance facts
-    azure_rm_containerinstance_info:
+    community.azure.azure_rm_containerinstance_info:
       resource_group: myResourceGroup
       name: myContainer
 
   - name: List Container Instances in a specified resource group name
-    azure_rm_containerinstance_info:
+    community.azure.azure_rm_containerinstance_info:
       resource_group: myResourceGroup
 '''
 

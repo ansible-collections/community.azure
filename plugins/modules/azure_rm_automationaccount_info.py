@@ -61,7 +61,7 @@ author:
 
 EXAMPLES = '''
 - name: Get details of an automation account
-  azure_rm_automationaccount_info:
+  community.azure.azure_rm_automationaccount_info:
       name: Testing
       resource_group: myResourceGroup
       list_statistics: yes
@@ -69,11 +69,11 @@ EXAMPLES = '''
       list_keys: yes
 
 - name: List automation account in a resource group
-  azure_rm_automationaccount_info:
+  community.azure.azure_rm_automationaccount_info:
       resource_group: myResourceGroup
 
 - name: List automation account in a resource group
-  azure_rm_automationaccount_info:
+  community.azure.azure_rm_automationaccount_info:
 '''
 
 RETURN = '''

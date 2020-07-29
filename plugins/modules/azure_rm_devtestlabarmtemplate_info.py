@@ -52,7 +52,7 @@ author:
 
 EXAMPLES = '''
   - name: Get information on DevTest Lab ARM Template
-    azure_rm_devtestlabarmtemplate_info:
+    community.azure.azure_rm_devtestlabarmtemplate_info:
       resource_group: myResourceGroup
       lab_name: myLab
       artifact_source_name: public environment repo

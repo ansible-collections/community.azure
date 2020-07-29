@@ -53,7 +53,7 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of Database Account
-    azure_rm_cosmosdbaccount_info:
+    community.azure.azure_rm_cosmosdbaccount_info:
       resource_group: myResourceGroup
       name: testaccount
 

@@ -44,19 +44,19 @@ author:
 
 EXAMPLES = '''
     - name: Get facts for one load balancer
-      azure_rm_loadbalancer_info:
+      community.azure.azure_rm_loadbalancer_info:
         name: Testing
         resource_group: myResourceGroup
 
     - name: Get facts for all load balancers
-      azure_rm_loadbalancer_info:
+      community.azure.azure_rm_loadbalancer_info:
 
     - name: Get facts for all load balancers in a specific resource group
-      azure_rm_loadbalancer_info:
+      community.azure.azure_rm_loadbalancer_info:
         resource_group: myResourceGroup
 
     - name: Get facts by tags
-      azure_rm_loadbalancer_info:
+      community.azure.azure_rm_loadbalancer_info:
         tags:
           - testing
 '''

@@ -47,13 +47,13 @@ author:
 
 EXAMPLES = '''
   - name: Get specific setting of MySQL Server
-    azure_rm_mysqlconfiguration_info:
+    community.azure.azure_rm_mysqlconfiguration_info:
       resource_group: myResourceGroup
       server_name: testmysqlserver
       name: deadlock_timeout
 
   - name: Get all settings of MySQL Server
-    azure_rm_mysqlconfiguration_info:
+    community.azure.azure_rm_mysqlconfiguration_info:
       resource_group: myResourceGroup
       server_name: server_name
 '''

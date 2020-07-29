@@ -42,19 +42,19 @@ author:
 
 EXAMPLES = '''
 - name: List images with name
-  azure_rm_image_info:
+  community.azure.azure_rm_image_info:
     name: test-image
     resource_group: myResourceGroup
 
 - name: List images by resource group
-  azure_rm_image_info:
+  community.azure.azure_rm_image_info:
     resource_group: myResourceGroup
     tags:
       - testing
       - foo:bar
 
 - name: List all available images under current subscription
-  azure_rm_image_info:
+  community.azure.azure_rm_image_info:
 '''
 
 

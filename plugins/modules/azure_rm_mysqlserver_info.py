@@ -46,12 +46,12 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of MySQL Server
-    azure_rm_mysqlserver_info:
+    community.azure.azure_rm_mysqlserver_info:
       resource_group: myResourceGroup
       name: server_name
 
   - name: List instances of MySQL Server
-    azure_rm_mysqlserver_info:
+    community.azure.azure_rm_mysqlserver_info:
       resource_group: myResourceGroup
 '''
 

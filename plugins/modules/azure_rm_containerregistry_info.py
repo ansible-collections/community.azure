@@ -48,12 +48,12 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of Registry
-    azure_rm_containerregistry_info:
+    community.azure.azure_rm_containerregistry_info:
       resource_group: myResourceGroup
       name: myRegistry
 
   - name: List instances of Registry
-    azure_rm_containerregistry_info:
+    community.azure.azure_rm_containerregistry_info:
       resource_group: myResourceGroup
 '''
 

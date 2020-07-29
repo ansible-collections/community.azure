@@ -23,7 +23,7 @@ description:
     - Get facts for a specific managed disk or all managed disks.
 
 notes:
-    - This module was called M(azure_rm_managed_disk_facts) before Ansible 2.8. The usage did not change.
+    - This module was called M(community.azure.azure_rm_managed_disk_facts) before Ansible 2.8. The usage did not change.
 
 options:
     name:
@@ -51,15 +51,15 @@ author:
 
 EXAMPLES = r'''
 - name: Get facts for one managed disk
-  azure_rm_manageddisk_info:
+  community.azure.azure_rm_manageddisk_info:
     name: Testing
     resource_group: myResourceGroup
 
 - name: Get facts for all managed disks
-  azure_rm_manageddisk_info:
+  community.azure.azure_rm_manageddisk_info:
 
 - name: Get facts by tags
-  azure_rm_manageddisk_info:
+  community.azure.azure_rm_manageddisk_info:
     tags:
     - testing
 '''

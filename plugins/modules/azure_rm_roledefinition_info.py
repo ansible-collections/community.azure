@@ -49,11 +49,11 @@ author:
 
 EXAMPLES = '''
     - name: List Role Definitions in scope
-      azure_rm_roledefinition_info:
+      community.azure.azure_rm_roledefinition_info:
         scope: /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/myResourceGroup
 
     - name: Get Role Definition by name
-      azure_rm_roledefinition_info:
+      community.azure.azure_rm_roledefinition_info:
         scope: /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/myResourceGroup
         name: myRoleDefinition
 '''

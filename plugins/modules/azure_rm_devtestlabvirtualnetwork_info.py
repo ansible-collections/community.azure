@@ -47,13 +47,13 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of DevTest Lab Virtual Network
-    azure_rm_devtestlabvirtualnetwork_info:
+    community.azure.azure_rm_devtestlabvirtualnetwork_info:
       resource_group: myResourceGroup
       lab_name: myLab
       name: myVirtualNetwork
 
   - name: List all Virtual Networks in DevTest Lab
-    azure_rm_devtestlabvirtualnetwork_info:
+    community.azure.azure_rm_devtestlabvirtualnetwork_info:
       resource_group: myResourceGroup
       lab_name: myLab
       name: myVirtualNetwork

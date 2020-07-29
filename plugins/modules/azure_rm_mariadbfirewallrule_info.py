@@ -49,13 +49,13 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of MariaDB Firewall Rule
-    azure_rm_mariadbfirewallrule_info:
+    community.azure.azure_rm_mariadbfirewallrule_info:
       resource_group: myResourceGroup
       server_name: server_name
       name: firewall_rule_name
 
   - name: List instances of MariaDB Firewall Rule
-    azure_rm_mariadbfirewallrule_info:
+    community.azure.azure_rm_mariadbfirewallrule_info:
       resource_group: myResourceGroup
       server_name: server_name
 '''

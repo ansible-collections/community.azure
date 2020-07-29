@@ -47,16 +47,16 @@ author:
 
 EXAMPLES = '''
     - name: Get facts for one virtual network
-      azure_rm_virtualnetwork_info:
+      community.azure.azure_rm_virtualnetwork_info:
         resource_group: myResourceGroup
         name: secgroup001
 
     - name: Get facts for all virtual networks
-      azure_rm_virtualnetwork_info:
+      community.azure.azure_rm_virtualnetwork_info:
         resource_group: myResourceGroup
 
     - name: Get facts by tags
-      azure_rm_virtualnetwork_info:
+      community.azure.azure_rm_virtualnetwork_info:
         tags:
           - testing
 '''
@@ -85,7 +85,7 @@ azure_virtualnetworks:
     }]
 virtualnetworks:
     description:
-        - List of virtual network dicts with same format as M(azure_rm_virtualnetwork) module parameters.
+        - List of virtual network dicts with same format as M(community.azure.azure_rm_virtualnetwork) module parameters.
     returned: always
     type: complex
     contains:

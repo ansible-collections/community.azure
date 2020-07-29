@@ -67,7 +67,7 @@ author:
 
 EXAMPLES = '''
   - name: Get scaleset info
-    azure_rm_resource_info:
+    community.azure.azure_rm_resource_info:
       resource_group: myResourceGroup
       provider: compute
       resource_type: virtualmachinescalesets
@@ -75,7 +75,7 @@ EXAMPLES = '''
       api_version: "2017-12-01"
 
   - name: Query all the resources in the resource group
-    azure_rm_resource_info:
+    community.azure.azure_rm_resource_info:
       resource_group: "{{ resource_group }}"
       resource_type: resources
 '''

@@ -47,13 +47,13 @@ author:
 
 EXAMPLES = '''
   - name: Get information on specific Virtual Machine Extension
-    azure_rm_virtualmachineextension_info:
+    community.azure.azure_rm_virtualmachineextension_info:
       resource_group: myResourceGroup
       virtual_machine_name: myvm
       name: myextension
 
   - name: List installed Virtual Machine Extensions
-    azure_rm_virtualmachineextension_info:
+    community.azure.azure_rm_virtualmachineextension_info:
       resource_group: myResourceGroup
       virtual_machine_name: myvm
 '''

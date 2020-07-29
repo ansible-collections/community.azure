@@ -53,7 +53,7 @@ author:
 
 EXAMPLES = '''
     - name: Get endpoints facts of a Traffic Manager profile
-      azure_rm_trafficmanagerendpoint_info:
+      community.azure.azure_rm_trafficmanagerendpoint_info:
         resource_group: myResourceGroup
         profile_name: Testing
 

@@ -24,7 +24,7 @@ description:
     - Create, update and delete an Azure Managed Disk.
 
 notes:
-    - This module was called M(azure_rm_managed_disk) before Ansible 2.8. The usage did not change.
+    - This module was called M(community.azure.azure_rm_managed_disk) before Ansible 2.8. The usage did not change.
 
 options:
     resource_group:
@@ -127,14 +127,14 @@ author:
 
 EXAMPLES = '''
     - name: Create managed disk
-      azure_rm_manageddisk:
+      community.azure.azure_rm_manageddisk:
         name: mymanageddisk
         location: eastus
         resource_group: myResourceGroup
         disk_size_gb: 4
 
     - name: Create managed operating system disk from page blob
-      azure_rm_manageddisk:
+      community.azure.azure_rm_manageddisk:
         name: mymanageddisk
         location: eastus2
         resource_group: myResourceGroup
@@ -144,7 +144,7 @@ EXAMPLES = '''
         storage_account_type: Premium_LRS
 
     - name: Mount the managed disk to VM
-      azure_rm_manageddisk:
+      community.azure.azure_rm_manageddisk:
         name: mymanageddisk
         location: eastus
         resource_group: myResourceGroup
@@ -153,14 +153,14 @@ EXAMPLES = '''
         attach_caching: read_only
 
     - name: Unmount the managed disk to VM
-      azure_rm_manageddisk:
+      community.azure.azure_rm_manageddisk:
         name: mymanageddisk
         location: eastus
         resource_group: myResourceGroup
         disk_size_gb: 4
 
     - name: Delete managed disk
-      azure_rm_manageddisk:
+      community.azure.azure_rm_manageddisk:
         name: mymanageddisk
         location: eastus
         resource_group: myResourceGroup

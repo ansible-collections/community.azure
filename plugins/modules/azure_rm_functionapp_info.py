@@ -42,16 +42,16 @@ author:
 
 EXAMPLES = '''
     - name: Get facts for one Function App
-      azure_rm_functionapp_info:
+      community.azure.azure_rm_functionapp_info:
         resource_group: myResourceGroup
         name: myfunctionapp
 
     - name: Get facts for all Function Apps in a resource group
-      azure_rm_functionapp_info:
+      community.azure.azure_rm_functionapp_info:
         resource_group: myResourceGroup
 
     - name: Get facts for all Function Apps by tags
-      azure_rm_functionapp_info:
+      community.azure.azure_rm_functionapp_info:
         tags:
           - testing
 '''

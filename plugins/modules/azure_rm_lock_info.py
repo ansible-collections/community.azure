@@ -56,27 +56,27 @@ author:
 
 EXAMPLES = '''
 - name: Get myLock details of myVM
-  azure_rm_lock_info:
+  community.azure.azure_rm_lock_info:
     name: myLock
     managed_resource_id: /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/myVM
 
 - name: List locks of myVM
-  azure_rm_lock_info:
+  community.azure.azure_rm_lock_info:
     managed_resource_id: /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/myVM
 
 - name: List locks of myResourceGroup
-  azure_rm_lock_info:
+  community.azure.azure_rm_lock_info:
     resource_group: myResourceGroup
 
 - name: List locks of myResourceGroup
-  azure_rm_lock_info:
+  community.azure.azure_rm_lock_info:
     managed_resource_id: /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/myResourceGroup
 
 - name: List locks of mySubscription
-  azure_rm_lock_info:
+  community.azure.azure_rm_lock_info:
 
 - name: List locks of mySubscription
-  azure_rm_lock_info:
+  community.azure.azure_rm_lock_info:
     managed_resource_id: /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 '''
 

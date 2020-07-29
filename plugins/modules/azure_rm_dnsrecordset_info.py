@@ -51,18 +51,18 @@ author:
 
 EXAMPLES = '''
 - name: Get facts for one Record Set
-  azure_rm_dnsrecordset_info:
+  community.azure.azure_rm_dnsrecordset_info:
     resource_group: myResourceGroup
     zone_name: example.com
     relative_name: server10
     record_type: A
 - name: Get facts for all Type A Record Sets in a Zone
-  azure_rm_dnsrecordset_info:
+  community.azure.azure_rm_dnsrecordset_info:
     resource_group: myResourceGroup
     zone_name: example.com
     record_type: A
 - name: Get all record sets in one zone
-  azure_rm_dnsrecordset_info:
+  community.azure.azure_rm_dnsrecordset_info:
     resource_group: myResourceGroup
     zone_name: example.com
 '''
@@ -93,7 +93,7 @@ azure_dnsrecordset:
     }]
 dnsrecordsets:
     description:
-        - List of record set dicts, which shares the same hierarchy as M(azure_rm_dnsrecordset) module's parameter.
+        - List of record set dicts, which shares the same hierarchy as M(community.azure.azure_rm_dnsrecordset) module's parameter.
     returned: always
     type: list
     contains:

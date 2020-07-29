@@ -48,16 +48,16 @@ author:
 
 EXAMPLES = '''
   - name: Get facts for all virtual machines of a resource group
-    azure_rm_virtualmachine_info:
+    community.azure.azure_rm_virtualmachine_info:
       resource_group: myResourceGroup
 
   - name: Get facts by name
-    azure_rm_virtualmachine_info:
+    community.azure.azure_rm_virtualmachine_info:
       resource_group: myResourceGroup
       name: myVm
 
   - name: Get facts by tags
-    azure_rm_virtualmachine_info:
+    community.azure.azure_rm_virtualmachine_info:
       resource_group: myResourceGroup
       tags:
         - testing

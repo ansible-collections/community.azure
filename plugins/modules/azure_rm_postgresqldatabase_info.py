@@ -47,13 +47,13 @@ author:
 
 EXAMPLES = '''
   - name: Get instance of PostgreSQL Database
-    azure_rm_postgresqldatabase_info:
+    community.azure.azure_rm_postgresqldatabase_info:
       resource_group: myResourceGroup
       server_name: server_name
       name: database_name
 
   - name: List instances of PostgreSQL Database
-    azure_rm_postgresqldatabase_info:
+    community.azure.azure_rm_postgresqldatabase_info:
       resource_group: myResourceGroup
       server_name: server_name
 '''
