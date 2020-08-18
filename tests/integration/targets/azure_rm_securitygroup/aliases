@@ -1,4 +1,4 @@
 cloud/azure
-shippable/azure/group2
+shippable/azure/group1
 destructive
-azure_rm_securitygroup_facts
+azure_rm_securitygroup1
