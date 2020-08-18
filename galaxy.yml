@@ -1,15 +1,22 @@
+# See https://docs.ansible.com/ansible/latest/dev_guide/collections_galaxy_meta.html
+
 namespace: community
 name: azure
 version: 0.1.0
 readme: README.md
 authors:
   - Ansible (github.com/ansible)
-description: null
+description: The Community Azure Collection
 license_file: COPYING
-tags: null
-#dependencies:
-#  azure.azcollection: '>=0.1.0'
+tags:
+  - azure
+dependencies:
+  azure.azcollection: '>=1.0.0'
 repository: https://github.com:ansible-collections/community.azure
-documentation: https://github.com/ansible-collection-migration/community.azure/tree/master/docs
+documentation: https://docs.ansible.com/ansible/2.10/collections/community/azure/
 homepage: https://github.com/ansible-collections/community.azure
 issues: https://github.com/ansible-collections/community.azure/issues
+build_ignore:
+# https://docs.ansible.com/ansible/devel/dev_guide/developing_collections.html#ignoring-files-and-folders
+  - .gitignore
+  - changelogs/.plugin-cache.yaml
