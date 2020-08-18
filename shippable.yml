@@ -8,10 +8,14 @@ matrix:
   exclude:
     - env: T=none
   include:
-    - env: T=sanity
+    - env: T=devel/sanity
+#    - env: T=2.10/sanity
 
-#    - env: T=azure/2.7/1
-    - env: T=azure/3.6/1
+#    - env: T=devel/azure/2.7/1
+#    - env: T=devel/azure/3.6/1
+#    - env: T=2.10/azure/2.7/1
+#    - env: T=2.10/azure/3.6/1
+
 
 branches:
   except:
