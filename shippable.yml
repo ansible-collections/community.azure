@@ -8,7 +8,8 @@ matrix:
   exclude:
     - env: T=none
   include:
-    - env: T=devel/sanity
+    - env: T=devel/sanity/1
+    - env: T=devel/sanity/extra
 #    - env: T=2.10/sanity
 
 #    - env: T=devel/azure/2.7/1

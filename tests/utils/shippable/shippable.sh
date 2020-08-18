@@ -5,9 +5,16 @@ set -o pipefail -eux
 declare -a args
 IFS='/:' read -ra args <<< "$1"
 
-script="${args[0]}"
+ansible_version="${args[0]}"
+script="${args[1]}"
 
-test="$1"
+function join {
+    local IFS="$1";
+    shift;
+    echo "$*";
+}
+
+test="$(join / "${args[@]:1}")"
 
 docker images ansible/ansible
 docker images quay.io/ansible/*
@@ -133,11 +140,13 @@ function cleanup
             set -ux
 
             # shellcheck disable=SC2086
-            ansible-test coverage xml --color --requirements --group-by command --group-by version ${stub:+"$stub"}
+            ansible-test coverage xml --color -v --requirements --group-by command --group-by version ${stub:+"$stub"}
             cp -a tests/output/reports/coverage=*.xml "$SHIPPABLE_RESULT_DIR/codecoverage/"
 
-            # analyze and capture code coverage aggregated by integration test target
-            ansible-test coverage analyze targets generate -v "$SHIPPABLE_RESULT_DIR/testresults/coverage-analyze-targets.json"
+            if [ "${ansible_version}" != "2.9" ]; then
+                # analyze and capture code coverage aggregated by integration test target
+                ansible-test coverage analyze targets generate -v "$SHIPPABLE_RESULT_DIR/testresults/coverage-analyze-targets.json"
+            fi
 
             # upload coverage report to codecov.io only when using complete on-demand coverage
             if [ "${COVERAGE}" == "--coverage" ] && [ "${CHANGED}" == "" ]; then
