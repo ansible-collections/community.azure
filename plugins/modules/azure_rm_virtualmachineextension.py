@@ -214,7 +214,8 @@ class AzureRMVMExtension(AzureRMModuleBase):
             setattr(self, key, kwargs[key])
 
         if self.module._name == 'azure_rm_virtualmachine_extension':
-            self.module.deprecate("The 'azure_rm_virtualmachine_extension' module has been renamed to 'azure_rm_virtualmachineextension'", version='2.12')
+            self.module.deprecate("The 'azure_rm_virtualmachine_extension' module has been renamed to 'azure_rm_virtualmachineextension'",
+                                  version='3.0.0', collection_name='community.azure')  # was 2.12
 
         resource_group = None
         response = None
