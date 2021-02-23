@@ -8,10 +8,6 @@ from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 
 
-ANSIBLE_METADATA = {'metadata_version': '1.1',
-                    'status': ['preview'],
-                    'supported_by': 'community'}
-
 DOCUMENTATION = '''
 ---
 module: azure_rm_aks_info
@@ -26,12 +22,16 @@ options:
     name:
         description:
             - Limit results to a specific resource group.
+        type: str
     resource_group:
         description:
-            - The resource group to search for the desired Azure Kubernetes Service
+            - The resource group to search for the desired Azure Kubernetes Service.
+        type: str
     tags:
         description:
             - Limit results by providing a list of tags. Format tags as 'key' or 'key:value'.
+        type: list
+        elements: str
     show_kubeconfig:
         description:
             - Show kubeconfig of the AKS cluster.
@@ -39,6 +39,7 @@ options:
         choices:
             - user
             - admin
+        type: str
 
 extends_documentation_fragment:
 - azure.azcollection.azure
@@ -90,7 +91,7 @@ class AzureRMManagedClusterInfo(AzureRMModuleBase):
         self.module_args = dict(
             name=dict(type='str'),
             resource_group=dict(type='str'),
-            tags=dict(type='list'),
+            tags=dict(type='list', elements='str'),
             show_kubeconfig=dict(type='str', choices=['user', 'admin']),
         )
 
