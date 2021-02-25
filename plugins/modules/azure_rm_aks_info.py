@@ -91,7 +91,7 @@ class AzureRMManagedClusterInfo(AzureRMModuleBase):
         self.module_args = dict(
             name=dict(type='str'),
             resource_group=dict(type='str'),
-            tags=dict(type='list', elements='str'),
+            tags=dict(type='list'),
             show_kubeconfig=dict(type='str', choices=['user', 'admin']),
         )
 

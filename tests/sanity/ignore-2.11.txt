@@ -1,3 +1,4 @@
+plugins/modules/azure_rm_aks_info.py validate-modules:parameter-list-no-elements
 plugins/modules/azure_rm_aks_info.py validate-modules:required_if-requirements-unknown
 plugins/modules/azure_rm_aks_info.py validate-modules:required_if-unknown-key
 plugins/modules/azure_rm_aksversion_info.py validate-modules:parameter-type-not-in-doc
