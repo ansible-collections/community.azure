@@ -12,7 +12,7 @@ tags:
   - azure
 dependencies:
   azure.azcollection: '>=1.0.0'
-repository: https://github.com:ansible-collections/community.azure
+repository: https://github.com/ansible-collections/community.azure
 documentation: https://docs.ansible.com/ansible/2.10/collections/community/azure/
 homepage: https://github.com/ansible-collections/community.azure
 issues: https://github.com/ansible-collections/community.azure/issues
