@@ -26,12 +26,9 @@ options:
     resource_group:
         description:
             - The resource group to search for the desired Azure Kubernetes Service.
-        type: str
     tags:
         description:
             - Limit results by providing a list of tags. Format tags as 'key' or 'key:value'.
-        type: list
-        elements: str
     show_kubeconfig:
         description:
             - Show kubeconfig of the AKS cluster.
