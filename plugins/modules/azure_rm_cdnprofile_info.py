@@ -160,7 +160,8 @@ class AzureRMCdnprofileInfo(AzureRMModuleBase):
 
         is_old_facts = self.module._name == 'azure_rm_cdnprofile_facts'
         if is_old_facts:
-            self.module.deprecate("The 'azure_rm_cdnprofile_facts' module has been renamed to 'azure_rm_cdnprofile_info'", version='2.13')
+            self.module.deprecate("The 'azure_rm_cdnprofile_facts' module has been renamed to 'azure_rm_cdnprofile_info'",
+                                  version='3.0.0', collection_name='community.azure')  # was 2.13
 
         for key in self.module_args:
             setattr(self, key, kwargs[key])

@@ -8,10 +8,6 @@ from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 
 
-ANSIBLE_METADATA = {'metadata_version': '1.1',
-                    'status': ['preview'],
-                    'supported_by': 'community'}
-
 DOCUMENTATION = '''
 ---
 module: azure_rm_aks_info
@@ -26,9 +22,10 @@ options:
     name:
         description:
             - Limit results to a specific resource group.
+        type: str
     resource_group:
         description:
-            - The resource group to search for the desired Azure Kubernetes Service
+            - The resource group to search for the desired Azure Kubernetes Service.
     tags:
         description:
             - Limit results by providing a list of tags. Format tags as 'key' or 'key:value'.
@@ -39,6 +36,7 @@ options:
         choices:
             - user
             - admin
+        type: str
 
 extends_documentation_fragment:
 - azure.azcollection.azure
@@ -115,7 +113,8 @@ class AzureRMManagedClusterInfo(AzureRMModuleBase):
 
         is_old_facts = self.module._name == 'azure_rm_aks_facts'
         if is_old_facts:
-            self.module.deprecate("The 'azure_rm_aks_facts' module has been renamed to 'azure_rm_aks_info'", version='2.13')
+            self.module.deprecate("The 'azure_rm_aks_facts' module has been renamed to 'azure_rm_aks_info'",
+                                  version='3.0.0', collection_name='community.azure')  # was 2.13
 
         for key in self.module_args:
             setattr(self, key, kwargs[key])
