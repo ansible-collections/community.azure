@@ -1,5 +1,6 @@
 # Ansible Community Azure Collection
-[![Shippable build status](https://api.shippable.com/projects/5e66776c46e72100078419d6/badge?branch=main)](https://app.shippable.com/projects/5e66776c46e72100078419d6)
+
+[![Build Status](https://dev.azure.com/ansible/community.azure/_apis/build/status/CI?branchName=master)](https://dev.azure.com/ansible/community.azure/_build?definitionId=30)
 [![Codecov](https://img.shields.io/codecov/c/github/ansible-collections/community.azure)](https://codecov.io/gh/ansible-collections/community.azure)
 
 Provides modules for [Ansible](https://www.ansible.com/community) for various Azure operations.
