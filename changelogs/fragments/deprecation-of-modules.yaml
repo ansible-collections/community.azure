@@ -1,0 +1,4 @@
+deprecated_features:
+- "All community.azure.azure_rm_*_info modules have been deprecated. Use azure.azcollection.azure_rm_*_info modules instead. (https://github.com/ansible-collections/community.azure/pull/23)"
+- "community.azure.azure_rm_virtualmachineextension has been deprecated. Use azure.azcollection.azure.azcollection.azure_rm_virtualmachineextension instead. (https://github.com/ansible-collections/community.azure/pull/23)"
+- "community.azure.azure_rm_virtualmachinescaleset has been deprecated. Use azure.azcollection.azure_rm_virtualmachinescaleset instead. (https://github.com/ansible-collections/community.azure/pull/23)"
