@@ -1,0 +1,5 @@
+removed_features:
+- "All community.azure.azure_rm_*_facts modules were removed following deprecation. Use azure.azcollection.azure_rm_*_info modules instead. (https://github.com/ansible-collections/community.azure/pull/23)"
+- "community.azure.azure_rm_virtualmachine_extension has been removed following deprecation. Use azure.azcollection.azure_rm_virtualmachineextension instead. (https://github.com/ansible-collections/community.azure/pull/23)"
+- "community.azure.azure_rm_virtualmachine_scaleset has been removed following deprecation. Use azure.azcollection.azure_rm_virtualmachinescaleset instead. (https://github.com/ansible-collections/community.azure/pull/23)"
+- "community.azure.azure_rm_managed_disk has been removed following deprecation. Use azure.azcollection.azure_rm_managed_disk instead. (https://github.com/ansible-collections/community.azure/pull/23)"
