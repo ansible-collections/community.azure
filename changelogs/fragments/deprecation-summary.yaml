@@ -1,0 +1,2 @@
+release_summary:
+- "The community.azure Ansible collection is being deprecated in favor of azure.azcollection which is maintained and provide the same modules. (https://github.com/ansible-collections/community.azure/pull/23)"
