@@ -281,7 +281,7 @@ plugin_routing:
     azure_rm_managed_disk:
       deprecation:
         removal_version: 2.0.0
-        warning_text: Use azure.azcollection.azure_rm_managed_disk instead.
+        warning_text: Use azure.azcollection.azure_rm_manageddisk instead.
     azure_rm_automationaccount_facts:
       deprecation:
         removal_version: 2.0.0
@@ -293,7 +293,7 @@ plugin_routing:
     azure_rm_managed_disk_facts:
       deprecation:
         removal_version: 2.0.0
-        warning_text: Use azure.azcollection.azure_rm_managed_disk_info instead.
+        warning_text: Use azure.azcollection.azure_rm_manageddisk_info instead.
     azure_rm_resourcegroup_facts:
       deprecation:
         removal_version: 2.0.0
@@ -345,6 +345,10 @@ plugin_routing:
       deprecation:
         removal_version: 2.0.0
         warning_text: Use azure.azcollection.azure_rm_manageddisk_info instead.
+    azure_rm_manageddisk:
+      deprecation:
+        removal_version: 2.0.0
+        warning_text: Use azure.azcollection.azure_rm_manageddisk instead.
     azure_rm_devtestlabschedule_info:
       deprecation:
         removal_version: 2.0.0
