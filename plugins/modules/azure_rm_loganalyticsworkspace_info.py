@@ -53,6 +53,10 @@ extends_documentation_fragment:
 author:
     - Yuwei Zhou (@yuwzho)
 
+deprecated:
+  removed_in: '2.0.0'
+  why: The Ansible collection community.azure is deprecated. Use azure.azcollection instead.
+  alternative: Use M(azure.azcollection.azure_rm_loganalyticsworkspace_info) instead.
 '''
 
 EXAMPLES = '''

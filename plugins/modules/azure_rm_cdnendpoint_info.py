@@ -45,6 +45,11 @@ extends_documentation_fragment:
 author:
     - Hai Cao (@caohai)
     - Yunge zhu (@yungezz)
+
+deprecated:
+  removed_in: '2.0.0'
+  why: The Ansible collection community.azure is deprecated. Use azure.azcollection instead.
+  alternative: Use M(azure.azcollection.azure_rm_cdnendpoint_info) instead.
 '''
 
 EXAMPLES = '''
