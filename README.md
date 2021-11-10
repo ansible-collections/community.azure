@@ -1,5 +1,7 @@
 # Ansible Community Azure Collection
 
+THIS COLLECTION IS DEPRECATED, USE [azure.azcollection](https://github.com/ansible-collections/azure) INSTEAD!
+
 [![Build Status](https://dev.azure.com/ansible/community.azure/_apis/build/status/CI?branchName=master)](https://dev.azure.com/ansible/community.azure/_build?definitionId=30)
 [![Codecov](https://img.shields.io/codecov/c/github/ansible-collections/community.azure)](https://codecov.io/gh/ansible-collections/community.azure)
 
