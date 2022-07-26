@@ -71,7 +71,7 @@ else
 fi
 
 # START: HACK install dependencies
-retry ansible-galaxy -vvv collection install azure.azcollection
+# retry ansible-galaxy -vvv collection install azure.azcollection
 
 # END: HACK
 
