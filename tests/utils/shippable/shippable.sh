@@ -112,9 +112,6 @@ else
     export UNSTABLE=""
 fi
 
-# remove empty core/extras module directories from PRs created prior to the repo-merge
-find plugins -type d -empty -print -delete
-
 function cleanup
 {
     # for complete on-demand coverage generate a report for all files with no coverage on the "sanity/5" job so we only have one copy
